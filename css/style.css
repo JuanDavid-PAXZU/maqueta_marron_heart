@@ -43,6 +43,8 @@ h3 {
 h3.title_section {
   text-transform: uppercase;
   color: var(--txt-dark);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -107,6 +109,12 @@ input, textarea {
   width: 100%;
   background: none;
   position: relative;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  cursor: pointer;
 }
 
 textarea {
@@ -372,6 +380,10 @@ main {
           box-sizing: border-box;
 }
 
+.cont_gen_footer .col_footer form.form_contact h5 {
+  color: var(--txt-light);
+}
+
 .cont_gen_footer .col_footer form.form_contact .contact_form_footer {
   margin: 20px 0;
   display: -ms-grid;
@@ -436,7 +448,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .sub_h_redes a {
@@ -533,6 +545,402 @@ main {
 .swiperHomeHero .swiper-slide .slide_title h2 {
   position: relative;
   z-index: 2;
+}
+
+.col_submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_term {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_term label {
+  color: var(--txt-light);
+  margin-left: 10px;
+}
+
+.cont_term label a {
+  color: var(--txt-light);
+}
+
+.cont_term label a:hover {
+  text-decoration: underline;
+}
+
+button.btn_submit {
+  width: 120px;
+  padding: 4px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  background: var(--btn-bg-light);
+  outline: 0;
+  border: 0;
+  color: var(--btn-txt-color2);
+  font-weight: 800;
+  height: 30px;
+  cursor: pointer;
+}
+
+.s_nosotros {
+  width: 100%;
+  background: url("../images/diseno/01-home/bg_section_aguacate.png") no-repeat center left;
+  background-size: contain;
+  padding: 80px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_gen_nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.cont_gen_nosotros picture {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.cont_gen_nosotros picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: drop-shadow(-23px 35px 29px rgba(0, 0, 0, 0.19));
+          filter: drop-shadow(-23px 35px 29px rgba(0, 0, 0, 0.19));
+}
+
+.cont_gen_nosotros .cont_desc_nosotros .tit_section {
+  margin-bottom: 20px;
+}
+
+.cont_gen_nosotros .cont_desc_nosotros .tit_section .title_section {
+  text-align: left;
+}
+
+.cont_gen_nosotros .cont_desc_nosotros .txt_desc_nosotros {
+  max-width: 660px;
+  line-height: 1.5;
+}
+
+.s_producto {
+  width: 100%;
+  background: url("../images/diseno/01-home/bg_section_aguacate2.png") no-repeat bottom right;
+  background-size: 350px;
+  padding: 0 0 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.s_producto::before {
+  content: '';
+  position: absolute;
+  background: url("../images/diseno/01-home/bg_section_rodaja.png") no-repeat center;
+  top: 10%;
+  right: 0px;
+  background-size: contain;
+  width: 338px;
+  height: 292px;
+}
+
+.cont_gen_productos .desc_section {
+  max-width: 780px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.swiperProductos {
+  max-width: 970px;
+}
+
+.swiperProductos .swiper-slide {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.swiperProductos .swiper-slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperProductos .swiper-slide a:hover .sec_img_p {
+  opacity: 1;
+}
+
+.swiperProductos .swiper-slide picture {
+  position: relative;
+  display: inline-block;
+}
+
+.swiperProductos .swiper-slide picture .first_img_p {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiperProductos .swiper-slide picture .sec_img_p {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.swiperProductos .swiper-slide .tit_product {
+  padding: 30px;
+  color: #1C6563;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: var(--color-2);
+  width: 100%;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.cont_cta {
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cont_cta .btn_vermas {
+  color: var(--txt-light);
+  background: #BBCE36;
+  border-radius: 7px;
+  text-align: center;
+  padding: 6px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 800;
+  width: 100%;
+  max-width: 120px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.s_elegirnos {
+  position: relative;
+}
+
+.s_elegirnos::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/C1.png") no-repeat center;
+  background-size: contain;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.s_elegirnos::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/E1.png") no-repeat center;
+  background-size: contain;
+  right: 0;
+  bottom: -100px;
+  z-index: 0;
+}
+
+.cont_gen_elegirnos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.cont_gen_elegirnos .col_el {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+.cont_gen_elegirnos .col_el .item_el {
+  margin-bottom: 30px;
+}
+
+.cont_gen_elegirnos .col_el .item_el picture {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.cont_gen_elegirnos .col_el .item_el .desc_txt_el {
+  line-height: 1.4;
+}
+
+.s_noticias_dest {
+  background: url("../images/diseno/01-home/bg_section_aguacate3.png") no-repeat center left;
+  background-size: 600px;
+  padding: 100px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_noticias_dest .tit_section {
+  margin-bottom: 50px;
+}
+
+.swiperNoticias .swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+.swiperNoticias .swiper-slide {
+  height: 100vh;
+  max-height: 420px;
+  position: relative;
+}
+
+.swiperNoticias .swiper-slide:nth-child(3n+1) {
+  background: #BBCE36;
+}
+
+.swiperNoticias .swiper-slide:nth-child(3n+2) {
+  background: #EE790E;
+}
+
+.swiperNoticias .swiper-slide:nth-child(3n+3) {
+  background: #5EE4E0;
+}
+
+.swiperNoticias .swiper-slide a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.4fr 1fr;
+      grid-template-columns: 1.4fr 1fr;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiperNoticias .swiper-slide a picture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -200px;
+  -webkit-transition: 600ms ease-out;
+  transition: 600ms ease-out;
+}
+
+.swiperNoticias .swiper-slide a picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+  mix-blend-mode: normal;
+}
+
+.swiperNoticias .swiper-slide a:hover picture img {
+  width: 160%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .4;
+  mix-blend-mode: multiply;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota {
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota h4 {
+  margin-bottom: 20px;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota .info_nota {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota .info_nota .cont_info {
+  margin-bottom: 10px;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota .info_nota .cont_info span {
+  margin-right: 6px;
+}
+
+.swiperNoticias .swiper-slide a .cont_desc_nota .resumen {
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 1050px) {

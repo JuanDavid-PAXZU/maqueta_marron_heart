@@ -39,6 +39,8 @@ h3{
 h3.title_section{
     text-transform: uppercase;
     color: var(--txt-dark);
+    text-align: center;
+    margin-bottom: 20px;
 }
 h4{
     font-size: 28px;
@@ -101,6 +103,11 @@ input, textarea{
     width: 100%;
     background: none;
     position: relative;
+}
+input[type="checkbox"]{
+    width: auto;
+    height: auto;
+    cursor: pointer;
 }
 textarea{
     height: auto;
@@ -292,6 +299,9 @@ main{
             width: 100%;
             padding: 20px;
             box-sizing: border-box;
+            h5{
+                color: var(--txt-light);
+            }
             .contact_form_footer{
                 margin: 20px 0;
                 display: grid;
@@ -337,7 +347,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    margin: 10px 0;
+    margin: 0;
     a{
         display: flex;
         justify-content: center;
@@ -383,10 +393,6 @@ main{
     }
 }
 
-.form_contact{
-
-}
-
 // HERO SECTION
 
 .s_hero_section{
@@ -422,8 +428,316 @@ main{
         }
     }
 }
+.col_submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cont_term{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    label{
+        color: var(--txt-light);
+        margin-left: 10px;
+        a{
+            color: var(--txt-light);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+button.btn_submit{
+    width: 120px;
+    padding: 4px 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: var(--btn-bg-light);
+    outline: 0;
+    border: 0;
+    color: var(--btn-txt-color2);
+    font-weight: 800;
+    height: 30px;
+    cursor: pointer;
+}
+
+.s_nosotros{
+    width: 100%;
+    background: url('../images/diseno/01-home/bg_section_aguacate.png')no-repeat center left;
+    background-size: contain;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.cont_gen_nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    picture{
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(-23px 35px 29px rgba(0, 0, 0, 0.19));
+        }
+    }
+    .cont_desc_nosotros{
+        .tit_section{
+            margin-bottom: 20px;
+            .title_section{
+                text-align: left;
+            }
+        }
+        .txt_desc_nosotros{
+            max-width: 660px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.s_producto{
+    width: 100%;
+    background: url('../images/diseno/01-home/bg_section_aguacate2.png')no-repeat bottom right;
+    background-size: 350px;
+    padding: 0 0 80px;
+    box-sizing: border-box;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url('../images/diseno/01-home/bg_section_rodaja.png')no-repeat center;
+        top: 10%;
+        right: 0px;
+        background-size: contain;
+        width: 338px;
+        height: 292px;
+    }
+}
+.cont_gen_productos{
+    .desc_section{
+        max-width: 780px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+}
+.swiperProductos{
+    max-width: 970px;
+    .swiper-slide{
+        justify-content: center;
+        border-radius: 22px;
+        overflow: hidden;
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:hover{
+                .sec_img_p{
+                    opacity: 1;
+                }
+            }
+        }
+        picture{
+            position: relative;
+            display: inline-block;
+            .first_img_p{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .sec_img_p{
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: 2;
+                left: 0;
+                right: 0;
+                object-fit: cover;
+                transition: 300ms ease-out;
+            }
+        }
+        .tit_product{
+            padding: 30px;
+            color: #1C6563;
+            text-align: center;
+            box-sizing: border-box;
+            background: var(--color-2);
+            width: 100%;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+}
+.cont_cta{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin: 40px 0;
+    .btn_vermas{
+        color: var(--txt-light);
+        background: #BBCE36;
+        border-radius: 7px;
+        text-align: center;
+        padding: 6px 8px;
+        box-sizing: border-box;
+        font-size: 20px;
+        font-weight: 800;
+        width: 100%;
+        max-width: 120px;
+        margin: auto;
+        text-transform: uppercase;
+    }
+}
+.s_elegirnos{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/C1.png')no-repeat center;
+        background-size: contain;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/E1.png')no-repeat center;
+        background-size: contain;
+        right: 0;
+        bottom: -100px;
+        z-index: 0;
+    }
+}
 
 
+.cont_gen_elegirnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    .col_el{
+        justify-self: center;
+        text-align: center;
+        .item_el{
+            margin-bottom: 30px;
+            picture{
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+            .desc_txt_el{
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.s_noticias_dest{
+    background: url('../images/diseno/01-home/bg_section_aguacate3.png')no-repeat center left;
+    background-size: 600px;
+    padding: 100px 0;
+    box-sizing: border-box;
+    .tit_section{
+        margin-bottom: 50px;
+    }
+}
+
+.swiperNoticias{
+    .swiper-wrapper{
+        padding-bottom: 50px;
+    }
+    
+    .swiper-slide{
+        &:nth-child(3n+1){
+            background: #BBCE36;
+        }
+        &:nth-child(3n+2){
+            background: #EE790E;
+        }
+        &:nth-child(3n+3){
+            background: #5EE4E0;
+        }
+        height: 100vh;
+        max-height: 420px;
+        position: relative;
+        a{
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            padding: 30px;
+            box-sizing: border-box;
+            height: 100%;
+            align-items: center;
+            picture{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -200px;
+                transition: 600ms ease-out;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 400ms ease;
+                    mix-blend-mode: normal;
+                }
+            }
+            &:hover{
+                picture{
+                    //  right: -120px;
+                    img{
+                        width: 160%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: .4;
+                        mix-blend-mode: multiply;
+                    }
+                }
+            }
+            .cont_desc_nota{
+                text-align: left;
+                position: relative;
+                z-index: 2;
+                h4{
+                    margin-bottom: 20px;
+                }
+                .info_nota{
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    .cont_info{
+                        margin-bottom: 10px;
+                        span{
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                .resumen{
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1050px){
     .header{
