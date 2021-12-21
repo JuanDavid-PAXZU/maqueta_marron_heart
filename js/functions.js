@@ -1,5 +1,9 @@
 function swiperHomeHero(){
     let swiper = new Swiper(".swiperHomeHero", {
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
