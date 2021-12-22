@@ -841,6 +841,8 @@ button.btn_submit{
         line-height: 1.4;
     }
     .h_img_header{
+        height: 100vh;
+        max-height: 600px;
         img{
             width: 100%;
             height: 100%;
@@ -1311,6 +1313,138 @@ button.btn_submit{
     }
 }
 
+.s_video_full{
+    margin-top: -200px;
+    margin-bottom: 100px;
+}
+
+.s_estructura_serv{
+    background: url('../images/diseno/01-home/bg_section_aguacate.png')no-repeat center left;
+    background-size: 300px;
+    margin-bottom: 80px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/E1.png')no-repeat center right;
+        background-size: contain;
+        right: 0;
+        top: 0;
+    }
+}
+
+.cont_gen_eserv{
+    .desc_txt_eserv{
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.cont_gen_items_eserv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    margin-top: 150px;
+    .card_serv{
+        background: var(--btn-bg-light);
+        padding: 210px 20px 20px 20px;
+        box-sizing: border-box;
+        border-radius: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        picture{
+            max-width: 230px;
+            display: inline-block;
+            position: absolute;
+            top: -100px;
+            img{
+                width: 90%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .card_title{
+            margin-bottom: 10px;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--color-2);
+            min-height: 57px;
+        }
+        .card_txt_desc{
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+}
+
+.cont_gen_prox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-bottom: 80px;
+    .bg_prox_white{
+        position: absolute;
+        background: var(--btn-bg-light);
+        width: 100%;
+        height: 60%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .cont_desc_gen_p{
+        position: relative;
+        z-index: 2;
+        padding-left: 50px;
+        h3{
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--color-2);
+        }
+        div{
+            line-height: 1.4;
+            max-width: 600px;
+        }
+    }
+    picture{
+        position: relative;
+        z-index: 2;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+} 
+
+.s_proximamente{
+    background: url('../images/diseno/01-home/bg_section_aguacate2.png')no-repeat center right;
+    background-size: 300px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url('../images/diseno/01-home/C1.png')no-repeat center;
+        background-size: contain;
+        left: 0;
+        width: 300px;
+        height: 300px;
+    }
+}
 
 @media screen and (max-width:1050px){
     .header{
