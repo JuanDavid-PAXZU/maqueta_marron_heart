@@ -1099,12 +1099,60 @@ button.btn_submit{
     }
 }
 
+.s_nota{
+   position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: url('../images/diseno/01-home/bg_section_aguacate.png')no-repeat center;
+        background-size: 500px;
+        width: 600px;
+        height: 600px;
+        z-index: 1;
+    }
+    &::after{
+        content: '';
+        background: url('../images/diseno/01-home/bg_section_aguacate2.png')no-repeat center;
+        position: absolute;
+        background-size: 500px;
+        width: 600px;
+        height: 600px;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
 .cont_nota{
     width: 100%;
     max-width: 640px;
     display: block;
     margin: auto;
     line-height: 1.5;
+    position: relative;
+    z-index: 2;
+    padding: 14px;
+    box-sizing: border-box;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/C1.png')no-repeat center;
+        background-size: contain;
+        left: -300px;
+        top: 5%;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/E1.png')no-repeat center;
+        background-size: contain;
+        bottom: 5%;
+        right: -300px;
+    }
     .header_nota{
         picture{
             border-radius: 8px;
@@ -1120,8 +1168,24 @@ button.btn_submit{
                 object-position: center;
             }
         }
+        .datos_nota{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 10px;
+            }
+        }
+        .title_nota{
+            margin: 18px 0;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1;
+            font-size: 33px;
+        }
     }
 }
+
+
 
 .cont_social_share{
     display: block;
@@ -1168,6 +1232,7 @@ button.btn_submit{
     margin-bottom: 40px;
     border-radius: 26px;
     overflow: hidden;
+    z-index: 2;
     .bg_border{
         background: linear-gradient(270deg, rgba(242, 242, 242, 0) 0%, #FFFFFF 49.85%, rgba(242, 242, 242, 0) 100.76%);
         position: absolute;
@@ -1215,10 +1280,11 @@ button.btn_submit{
             box-sizing: border-box;
             font-weight: 300;
             line-height: 1.5;
+            transition: 300ms ease;
         }
         &:hover{
             .txt_prev_nota{
-                color: var(--color-2);
+                color: #3F9490;
             }
         }
     }
@@ -1239,6 +1305,11 @@ button.btn_submit{
     }
 }
 
+.cuerpo_nota{
+    h3, h4, h5{
+        margin: 20px 0 10px;
+    }
+}
 
 
 @media screen and (max-width:1050px){

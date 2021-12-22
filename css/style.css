@@ -1402,12 +1402,65 @@ button.btn_submit {
   display: inline-block;
 }
 
+.s_nota {
+  position: relative;
+}
+
+.s_nota::before {
+  content: '';
+  position: absolute;
+  background: url("../images/diseno/01-home/bg_section_aguacate.png") no-repeat center;
+  background-size: 500px;
+  width: 600px;
+  height: 600px;
+  z-index: 1;
+}
+
+.s_nota::after {
+  content: '';
+  background: url("../images/diseno/01-home/bg_section_aguacate2.png") no-repeat center;
+  position: absolute;
+  background-size: 500px;
+  width: 600px;
+  height: 600px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .cont_nota {
   width: 100%;
   max-width: 640px;
   display: block;
   margin: auto;
   line-height: 1.5;
+  position: relative;
+  z-index: 2;
+  padding: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont_nota::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/C1.png") no-repeat center;
+  background-size: contain;
+  left: -300px;
+  top: 5%;
+}
+
+.cont_nota::after {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/E1.png") no-repeat center;
+  background-size: contain;
+  bottom: 5%;
+  right: -300px;
 }
 
 .cont_nota .header_nota picture {
@@ -1426,6 +1479,27 @@ button.btn_submit {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.cont_nota .header_nota .datos_nota {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_nota .header_nota .datos_nota span {
+  margin-right: 10px;
+}
+
+.cont_nota .header_nota .title_nota {
+  margin: 18px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 33px;
 }
 
 .cont_social_share {
@@ -1498,6 +1572,7 @@ button.btn_submit {
   margin-bottom: 40px;
   border-radius: 26px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .cont_not_ant_sig .bg_border {
@@ -1569,10 +1644,12 @@ button.btn_submit {
           box-sizing: border-box;
   font-weight: 300;
   line-height: 1.5;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .cont_not_ant_sig a:hover .txt_prev_nota {
-  color: var(--color-2);
+  color: #3F9490;
 }
 
 .cont_not_ant_sig .not_ant {
@@ -1601,6 +1678,10 @@ button.btn_submit {
 
 .cont_not_ant_sig .not_sig .txt_prev_nota {
   text-align: right;
+}
+
+.cuerpo_nota h3, .cuerpo_nota h4, .cuerpo_nota h5 {
+  margin: 20px 0 10px;
 }
 
 @media screen and (max-width: 1050px) {
