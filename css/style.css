@@ -92,6 +92,9 @@ h6 {
   margin: auto;
   display: block;
   max-width: 1200px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* INPUTS MODIFICADOS */
@@ -291,15 +294,17 @@ header {
   padding: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  font-weight: 600;
 }
 
 .header .nav_desktop .nav_links a:hover {
-  color: var(--btn-txt-color2);
+  color: #2A9A97;
 }
 
 .header .nav_desktop .nav_links a.activeM {
-  font-weight: 600;
-  color: var(--btn-txt-color2);
+  color: #2A9A97;
 }
 
 .header .nav-mobile {
@@ -1023,6 +1028,346 @@ button.btn_submit {
 
 .swiperNoticias .swiper-slide a .cont_desc_nota .resumen {
   line-height: 1.5;
+}
+
+/* INTERNA QUIENES SOMOS */
+.s_header_int {
+  -webkit-mask-image: url("../images/diseno/02-quienes-somos/mask_header.svg");
+          mask-image: url("../images/diseno/02-quienes-somos/mask_header.svg");
+  -webkit-mask-position: bottom;
+          mask-position: bottom;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  max-height: 600px;
+  height: 100vh;
+  background: url("../images/diseno/02-quienes-somos/bg_header.png"), linear-gradient(248.4deg, #E5F95F -23.95%, rgba(229, 249, 95, 0) 64.18%), linear-gradient(85.3deg, #3F7D7C 23.11%, rgba(94, 228, 224, 0) 90.33%), #5EE4E0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.cont_header_int {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cont_header_int .h_desc_header {
+  padding-top: 120px;
+}
+
+.cont_header_int .title_int_header {
+  margin-bottom: 20px;
+  color: var(--txt-light);
+}
+
+.cont_header_int .desc_int_header {
+  color: var(--txt-light);
+  line-height: 1.4;
+}
+
+.cont_header_int .h_img_header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.s_sobre_nosotros {
+  background: url("../images/diseno/01-home/bg_section_aguacate.png") no-repeat top left;
+  background-size: 300px;
+  padding-top: 220px;
+  margin-top: -160px;
+  position: relative;
+}
+
+.s_sobre_nosotros::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/C1.png") no-repeat center;
+  background-size: contain;
+  left: 0;
+  top: 0;
+}
+
+.cont_gen_int_nosotros {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.cont_gen_int_nosotros.rtl .col_sb {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.cont_gen_int_nosotros.rtl picture {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.cont_gen_int_nosotros.rtl picture .gradient_img_bg {
+  width: 100%;
+  background: #E5F480;
+}
+
+.cont_gen_int_nosotros.rtl picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0;
+}
+
+.cont_gen_int_nosotros picture {
+  max-width: 480px;
+  position: relative;
+  overflow: hidden;
+  max-height: 480px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.cont_gen_int_nosotros picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 -10px -10px;
+}
+
+.cont_gen_int_nosotros picture .gradient_img_bg {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #5EE4E0;
+  inset: 0;
+  z-index: 1;
+}
+
+.cont_gen_int_nosotros .col_sb .tit_section h3 {
+  text-align: left;
+}
+
+.cont_gen_int_nosotros .col_sb .txt_desc_nosotros_int {
+  line-height: 1.4;
+}
+
+.s_trayectoria {
+  background: url("../images/diseno/01-home/bg_section_aguacate2.png") no-repeat top right;
+  background-size: 370px;
+  position: relative;
+  padding: 100px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_trayectoria::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/E1.png") no-repeat center;
+  background-size: contain;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.cont_gen_trayectoria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  gap: 30px;
+}
+
+.cont_gen_trayectoria .gradient_trayectoria {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  height: 99%;
+  background: linear-gradient(275.7deg, rgba(98, 43, 10, 0.44) -23.17%, rgba(238, 121, 14, 0.44) 52.48%), #EE790E;
+  z-index: 1;
+}
+
+.cont_gen_trayectoria picture {
+  position: relative;
+  z-index: 2;
+}
+
+.cont_gen_trayectoria picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.cont_gen_trayectoria .col_sb {
+  position: relative;
+  z-index: 2;
+  padding-left: 40px;
+}
+
+.cont_gen_trayectoria .col_sb .tit_section h3 {
+  color: var(--txt-light);
+  text-align: left;
+}
+
+.cont_gen_trayectoria .col_sb .txt_desc_trayect {
+  color: var(--txt-light);
+}
+
+.s_nuestra_vision {
+  background: url("../images/diseno/01-home/bg_section_aguacate3.png") no-repeat center left;
+  background-size: 370px;
+  position: relative;
+  padding: 100px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s_nuestra_vision::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("../images/diseno/01-home/E1.png") no-repeat center;
+  background-size: contain;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.fix_curve {
+  margin-top: 41px;
+}
+
+.cont_gen_respon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_gen_respon.r2 .col_respons {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.cont_gen_respon.r2 .col_respons_img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.cont_gen_respon .col_respons_img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cont_gen_respon .col_respons_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cont_gen_respon .col_respons .title_section {
+  text-align: left;
+}
+
+.r_bg_1 {
+  background: url("../images/diseno/01-home/bg_section_aguacate.png") no-repeat center left;
+}
+
+.r_bg_1::before {
+  background: url("../images/diseno/01-home/C1.png") no-repeat center;
+  top: -180px;
+}
+
+.r_bg_2 {
+  background: url("../images/diseno/01-home/bg_section_aguacate2.png") no-repeat center right;
+}
+
+.r_bg_2::before {
+  background: url("../images/diseno/01-home/bg_section_rodaja.png") no-repeat center;
+  left: 0;
+  bottom: 0;
+}
+
+.r_bg_3 {
+  background: url("../images/diseno/01-home/bg_section_aguacate3.png") no-repeat center left;
+}
+
+.r_bg_3::before {
+  background: url("../images/diseno/01-home/E1.png") no-repeat center;
+  bottom: 0;
+  right: 0;
+}
+
+.r_bg_1, .r_bg_2, .r_bg_3 {
+  background-size: 300px;
+  position: relative;
+}
+
+.r_bg_1::before, .r_bg_2::before, .r_bg_3::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-size: contain;
 }
 
 @media screen and (max-width: 1050px) {
