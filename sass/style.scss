@@ -846,7 +846,7 @@ button.btn_submit{
         img{
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
 }
@@ -1443,6 +1443,105 @@ button.btn_submit{
         left: 0;
         width: 300px;
         height: 300px;
+    }
+}
+
+.s_producto1{
+    background: url('../images/diseno/01-home/bg_section_aguacate3.png')no-repeat center left;
+    background-size: 400px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/C1.png')no-repeat center;
+        background-size: contain;
+    }
+
+    .title_p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-bottom: 20PX;
+        }
+    }
+}
+
+.cont_gen_prod_int{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    picture{
+        position: relative;
+        z-index: 3;
+        max-width: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .items_desc_product{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 40px;
+        .item_p{
+            max-width: 240px;
+            text-align: center;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 300px;
+                background: #666666;
+                left: -300px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 1;
+            }
+            h5{
+                color: var(--color-2);
+                text-transform: uppercase;
+                margin-bottom: 14px;
+            }
+        }
+    }
+}
+
+.s_producto2{
+    background: url('../images/diseno/01-home/bg_section_aguacate2.png')no-repeat center right;
+    background-size: 300px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        background: url('../images/diseno/01-home/E1.png')no-repeat center;
+        background-size: contain;
+    }
+    .cont_gen_prod_int{
+        flex-direction: row-reverse;
+        .items_desc_product{
+            .item_p{
+                &::before{
+                    content: '';
+                    right: -300px;
+                    left: auto;
+                }
+            }
+        }
     }
 }
 
