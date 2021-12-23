@@ -2170,6 +2170,98 @@ button.btn_submit {
      object-fit: cover;
 }
 
+.s_header_blog {
+  background: url("../images/diseno/08-blog/bg_header_blog.png") no-repeat center top;
+  background-size: cover;
+}
+
+.cont_gen_header_blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr .9fr;
+      grid-template-columns: 2fr .9fr;
+}
+
+.cont_gen_header_blog .nota_h_destacada {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  max-height: 414px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.cont_gen_header_blog .nota_h_destacada picture {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  max-height: 414px;
+}
+
+.cont_gen_header_blog .nota_h_destacada picture .filter_bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(94, 228, 224, 0)), to(#3F7D7C)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.45)));
+  background: linear-gradient(180deg, rgba(94, 228, 224, 0) 0%, #3F7D7C 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.cont_gen_header_blog .nota_h_destacada picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.cont_gen_header_blog .nota_h_destacada .card_header_nota a {
+  color: var(--txt-light);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cont_gen_header_blog .nota_h_destacada .card_cat {
+  position: absolute;
+  z-index: 2;
+  background: var(--color-2);
+  border-radius: 8px;
+  padding: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 10px;
+  left: 10px;
+}
+
+.cont_gen_header_blog .nota_h_destacada .card_header_nota {
+  position: relative;
+  z-index: 2;
+}
+
+.cont_gen_header_blog .cont_doble_dest {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 @media screen and (max-width: 1050px) {
   .header .nav_desktop {
     display: none;
