@@ -1727,6 +1727,7 @@ button.btn_submit{
             z-index: 1;
             display: inline-block;
             max-height: 414px;
+            height: inherit;
             .filter_bg{
                 background: linear-gradient(180deg, rgba(94, 228, 224, 0) 0%, #3F7D7C 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
                 width: 100%;
@@ -1800,6 +1801,8 @@ button.btn_submit{
                 max-height: 200px;
                 border-radius: 6px;
                 overflow: hidden;
+                width: 100%;
+                height: 100%;
                 .card_cat{
                     position: absolute;
                     left: 10px;
@@ -1933,6 +1936,8 @@ button.btn_submit{
     padding: 20px;
     box-sizing: border-box;
     border-radius: 8px;
+    position: relative;
+    z-index: 2;
     .cont_aside_int{
         margin-top: 20px;
         .card_aside_nota{
@@ -2050,6 +2055,9 @@ button.btn_submit{
     .r_bg_1::before, .r_bg_2::before, .r_bg_3::before{
         display: none;
     }
+    .cont_gen_header_blog{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -2150,6 +2158,19 @@ button.btn_submit{
     }
     .header .nav_desktop{
         width: 113%;
+    }
+    .s_lista_notas .center{
+        grid-template-columns: 1fr;
+    }
+    .s_lista_notas .center::before{
+        width: 300px;
+        height: 300px;
+    }
+    .s_lista_notas .center{
+        margin-top: 60px;
+    }
+    .cont_gen_header_blog .cont_doble_dest .not_semidest .card_semidest_nota{
+        padding: 0 0px 20px;
     }
 }
 

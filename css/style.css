@@ -2227,6 +2227,7 @@ button.btn_submit {
   z-index: 1;
   display: inline-block;
   max-height: 414px;
+  height: inherit;
 }
 
 .cont_gen_header_blog .nota_h_destacada picture .filter_bg {
@@ -2320,6 +2321,8 @@ button.btn_submit {
   max-height: 200px;
   border-radius: 6px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .cont_gen_header_blog .cont_doble_dest .not_semidest a:first-child .card_cat {
@@ -2493,6 +2496,8 @@ button.btn_submit {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
+  position: relative;
+  z-index: 2;
 }
 
 .notas_interes .cont_aside_int {
@@ -2632,6 +2637,10 @@ button.btn_submit {
   .r_bg_1::before, .r_bg_2::before, .r_bg_3::before {
     display: none;
   }
+  .cont_gen_header_blog {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2749,6 +2758,20 @@ button.btn_submit {
   }
   .header .nav_desktop {
     width: 113%;
+  }
+  .s_lista_notas .center {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .s_lista_notas .center::before {
+    width: 300px;
+    height: 300px;
+  }
+  .s_lista_notas .center {
+    margin-top: 60px;
+  }
+  .cont_gen_header_blog .cont_doble_dest .not_semidest .card_semidest_nota {
+    padding: 0 0px 20px;
   }
 }
 
