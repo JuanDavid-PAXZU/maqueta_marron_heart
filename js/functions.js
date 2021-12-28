@@ -13,18 +13,34 @@ function swiperHomeHero(){
 
 function swiperNoticias(){
   let swiper = new Swiper(".swiperNoticias", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     pagination: {
       el: ".swiper-pagination",
     },
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      1050: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      }
+    }
   });
 }
 
 function swiperProductos(){
   let swiper = new Swiper(".swiperProductos", {
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 6,
     pagination: {
       el: ".swiper-pagination",
     },
@@ -32,6 +48,22 @@ function swiperProductos(){
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1050: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
   });
 }
 
