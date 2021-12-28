@@ -1749,6 +1749,29 @@ button.btn_submit{
                font-size: 20px;
                margin-bottom: 10px;
             }
+            .card_data{
+                color: var(--txt-light);
+                margin-bottom: 10px;
+                span{
+                    color: var(--txt-light);
+                    margin-right: 4px;
+                }
+            }
+            .card_txt_nota{
+                margin: 20px 0;
+                color: var(--txt-light);
+            }
+            .btn_leermas{
+                display: flex;
+                align-items: center;
+                &:hover{
+                    text-decoration: underline;
+                }
+                img{
+                    margin-right: 10px;
+                    filter: brightness(100);
+                }
+            }
         }
         .card_cat{
             position: absolute;
@@ -1770,6 +1793,178 @@ button.btn_submit{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        .not_semidest{
+            a:first-child{
+                position: relative;
+                margin-bottom: 10px;
+                max-height: 200px;
+                border-radius: 6px;
+                overflow: hidden;
+                .card_cat{
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    background: var(--color-2);
+                    padding: 4px 8px;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .card_semidest_nota{
+                padding: 0 20px 20px;
+                box-sizing: border-box;
+                a{
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+                .card_data{
+                    margin-bottom: 10px;
+                    span{
+                        margin-right: 6px;
+                    }
+                }
+                .btn_leermas{
+                    display: flex;
+                    align-items: center;
+                    margin: 8px 0;
+                    img{
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+.s_lista_notas{
+
+    .center{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding-top: 60px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 40%;
+            background: url('../images/diseno/01-home/bg_section_aguacate3.png')no-repeat center;
+            background-size: contain;
+            width: 400px;
+            height: 400px;
+            z-index: 1;
+        }
+    }
+}
+.col_list_notas{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    .card_nota_l{
+        display: grid;
+        grid-template-columns: .6fr 1fr;
+        align-items: center;
+        gap: 20px;
+        height: fit-content;
+        a:first-child{
+            position: relative;
+            max-height: 203px;
+            max-width: 305px;
+            border-radius: 8px;
+            overflow: hidden;
+            height: -webkit-fill-available;
+            label{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                background: var(--color-2);
+                padding: 4px 8px;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .card_desc_nota{
+            a{
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 10px;
+                &:hover{
+                    color:var(--btn-txt-color2);
+                }
+            }
+            .card_data{
+                margin-bottom: 10px;
+                span{
+                    margin-right: 6px;
+                }
+            }
+            .card_txt_nota{
+                max-width: 380px;
+                margin-bottom: 20px;
+            }
+            .btn_leermas{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.notas_interes{
+    background: #57B6B3;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    .cont_aside_int{
+        margin-top: 20px;
+        .card_aside_nota{
+            &:last-child{
+                margin-bottom: 0px;    
+            }
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+            picture{
+                min-height: 95px;
+                border-radius: 5px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            h5{
+                font-size: 16px;
+            }
+            .card_data{
+                margin-top: 10px;
+                font-size: 13px;
+                span{
+                    font-size: 14px;
+                    margin-right: 4px;
+                }
+            }
+        }
     }
 }
 
