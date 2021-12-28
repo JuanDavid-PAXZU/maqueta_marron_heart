@@ -1,3 +1,13 @@
+function menuMobile(){
+  const btnMenu = document.querySelector('.header .nav-mobile .link-menu');
+  const contMenu = document.querySelector('.header .nav_desktop');
+
+  btnMenu.addEventListener('click', (e) => {
+    contMenu.classList.toggle('activo');
+  })
+}
+
+
 function swiperHomeHero(){
     let swiper = new Swiper(".swiperHomeHero", {
         effect: 'fade',
@@ -67,6 +77,7 @@ function swiperProductos(){
   });
 }
 
+menuMobile();
 swiperHomeHero();
 swiperProductos();
 swiperNoticias();

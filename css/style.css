@@ -270,6 +270,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header h1 a {
@@ -2301,9 +2302,43 @@ button.btn_submit {
 @media screen and (max-width: 1050px) {
   .header .nav_desktop {
     display: none;
+    position: absolute;
+    background: #f6fbfa;
+    top: 86px;
+    z-index: 1;
+    width: 105%;
+    right: -20px;
+    height: 100vh;
+    padding: 60px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+  }
+  .header .nav_desktop.activo {
+    display: block;
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
   }
   .header .nav-mobile {
     display: block;
+  }
+  .header .nav_desktop .nav_links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .nav_desktop .nav_links li {
+    width: 90%;
+  }
+  .header .nav_desktop .nav_links a {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
   }
   .swiperHomeHero .swiper-slide .slide_title h2 span {
     font-size: 46px;
@@ -2452,6 +2487,9 @@ button.btn_submit {
   }
   .s_contacto {
     min-height: 300px;
+  }
+  .header .nav_desktop {
+    width: 113%;
   }
 }
 
